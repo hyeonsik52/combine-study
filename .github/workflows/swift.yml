@@ -15,4 +15,4 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build & Run tests
       run: |
-        Pod install —repo-update —clean-install —project-directory=ImageLoad(Combine+TableView)/xcodebuild clean test -workspace ImageLoad(Combine+TableView)/ImageLoad(Combine+TableView).xcworkspace -scheme TARAS-Dev -destination 'playform=iOS Simulator, name=iPhone 11 Pro, OS=latest'
+        pod install —repo-update —clean-install —project-directory=ImageLoad(Combine+TableView)/xcodebuild clean test -workspace ImageLoad(Combine+TableView)/ImageLoad(Combine+TableView).xcworkspace -scheme TARAS-Dev -destination 'playform=iOS Simulator, name=iPhone 11 Pro, OS=latest'
