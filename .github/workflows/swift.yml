@@ -1,0 +1,20 @@
+name: Swift
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build & Run tests
+      run: |
+        Pod install —repo-update —clean-install —project-directory=taras-ios/
+        xcodebuild clean test -workspace Taras-ios/TARAS.xcworkspace -scheme TARAS-Dev
+        -destination ‘playform=iOS Simulator, name=iPhone 11 Pro, OS=latest’
