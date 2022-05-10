@@ -14,5 +14,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build & Run tests
-      run: |
-        pod install -—repo-update -—clean-install -—project-directory=ImageLoad(Combine+TableView)/xcodebuild clean test -workspace ImageLoad(Combine+TableView)/ImageLoad(Combine+TableView).xcworkspace -scheme ImageLoad(Combine+TableView) -destination 'playform=iOS Simulator, name=iPhone 11 Pro, OS=latest'
+      run: xcodebuild clean test -project CombineStudy/ImageLoad(Combine+TableView)/ImageLoad(Combine+TableView).xcodeproj -scheme ImageLoad(Combine+TableView) -destination 'platform=iOS Simulator, name=iPhone 11 Pro, OS=latest'
