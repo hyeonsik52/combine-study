@@ -16,5 +16,4 @@ jobs:
     - name: Build & Run tests
       run: |
         pod install --repo-update --clean-install
-        --project-directory=ImageLoad(Combine+TableView)/xocdebuild clean test -workspace ImageLoad(Combine+TableView)/ImageLoad(Combine+TableView).xcworkspace -scheme ImageLoad(Combine+TableView)/
-        -destination 'platform-iOS Simulator, name=iPhone 13, OS=9.0'
+        --project-directory=ImageLoad(Combine+TableView)/xocdebuild clean test -workspace ImageLoad(Combine+TableView)/ImageLoad(Combine+TableView).xcworkspace
