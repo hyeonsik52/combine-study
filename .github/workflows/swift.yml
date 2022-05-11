@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - name: Build & Run tests
+    - name: pod install
       run: | pod install --repo-update --clean-install
     
     - name: Build & Run tests
