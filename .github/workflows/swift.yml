@@ -19,4 +19,4 @@ jobs:
     
     - name: Build & Run tests
       run: |
-        --project-directory=ImageLoad(Combine+TableView)/xocdebuild clean test -workspace ImageLoad(Combine+TableView).xcworkspace -scheme ImageLoad(Combine+TableView) -destination 'platform=iOS Simulator, name=iPhone 13'
+        --project-directory=ImageLoad(Combine+TableView)/xocdebuild clean test -workspace ImageLoad(Combine+TableView).xcworkspace -scheme ImageLoad(Combine+TableView) -destination "platform=iOS Simulator, name=iPhone 13"
